@@ -20,7 +20,8 @@ export ZOO_SERVERS=0.0.0.0:2888:3888
 
 mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR";
 
-ZOO_DISTRO_NAME=zookeeper-3.4.12
+# Check https://www.apache.org/dist/zookeeper/ to see which versions are available.
+ZOO_DISTRO_NAME=zookeeper-3.4.14
 wget -q "https://www.apache.org/dist/zookeeper/$ZOO_DISTRO_NAME/$ZOO_DISTRO_NAME.tar.gz"; \
 wget -q "https://www.apache.org/dist/zookeeper/$ZOO_DISTRO_NAME/$ZOO_DISTRO_NAME.tar.gz.asc"; \
 tar -xzf "$ZOO_DISTRO_NAME.tar.gz"; \
